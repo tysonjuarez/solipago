@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/configuracion.css">
+  <title>Configuración</title>
+</head>
+<body>
+
+  <header>
+    <h1>Sistema de gestión – Configuracion</h1>
+    <nav>
+      <a href="index.html">Movimiento de fondos</a>
+      <a href="/configuracion.html">Configuración</a>
+      <a href="/saldos.html">Saldos</a>
+      <a href="/reportes.html">Reportes</a>
+    </nav>
+  </header>
+    
+  <h2>Configuracion - Nueva cuenta</h2>
+
+  <form action="#">
+
+    <div class="form-group">
+      <label for="numero-cuenta">Número de cuenta</label>
+      <input type="number" id="numero-cuenta" name="numero-cuenta" value="322">
+    </div>
+
+    <div class="form-group">
+      <label for="empresa">Empresa</label>
+      <select id="empresa" name="empresa">
+        <option value=""></option>
+        <option value="1">Empresa 1</option>
+        <option value="2">Empresa 2</option>
+        <option value="3">Empresa 3</option>
+        <option value="4">Empresa 4</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+        <label for="moneda">Moneda</label>
+        <select id="moneda" name="moneda">
+          <option value="ARS">ARS</option>
+          <option value="USD">USD</option>
+          <option value="REAL">YEN</option>
+          <option value="YEN">BTC</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="concepto">Concepto</label>
+        <input type="text" id="concepto" name="concepto">
+      </div>
+      <hr>
+    
+    <div class="form-group">
+      <label for="nombre-cuenta">Nombre de la cuenta</label>
+      <input type="text" id="nombre-cuenta" name="nombre-cuenta">
+    </div>
+
+    <div class="form-group">
+      <label for="tiene-tasa">¿Tiene tasa?</label>
+      <input type="checkbox" id="tiene-tasa" name="tiene-tasa">
+    </div>
+
+    <div class="form-group">
+      <label for="perfil-tasa">Perfil de tasa</label>
+      <select id="perfil-tasa" name="perfil-tasa">
+        <option value=""></option>
+        <option value="1">Perfil 1</option>
+        <option value="2">Perfil 2</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="rol">Rol</label>
+      <select id="rol" name="rol">
+        <option value=""></option>
+        <option value="1">Inversor</option>
+        <option value="2">Prestamista</option>
+      </select>
+    </div>
+
+    <button type="submit">Nuevo</button>
+
+  </form>
+</main>
+
+</body>
+</html>

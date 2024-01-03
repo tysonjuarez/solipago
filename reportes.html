@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="reportes.css">
+  <title>Sistema de gestión</title>
+</head>
+<body>
+
+  <header>
+    <h1>Reportes</h1>
+    <nav>
+      <a href="/index.html">Movimiento de fondos</a>
+      <a href="/configuracion.html">Configuración</a>
+      <a href="/saldos.html">Saldos</a>
+      <a href="/reportes.html">Reportes</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Movimiento de fondos - Nuevo</h2>
+
+    <form action="#">
+      <div class="form-group">
+        <label for="fecha">Fecha</label>
+        <input type="date" id="fecha" value="2023-12-13">
+      </div>
+
+      <div class="form-group">
+        <label for="empresa">Empresa</label>
+        <select id="empresa">
+          <option value="1">Empresa 1</option>
+          <option value="2">Empresa 2</option>
+          <option value="3">Empresa 3</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="tipo_cambio">Tipo de cambio</label>
+        <input type="number" id="tipo_cambio" value="1">
+      </div>
+
+      <div class="form-group">
+        <label for="moneda_desde">Moneda desde</label>
+        <select id="moneda_desde">
+          <option value="1">ARS</option>
+          <option value="2">USD</option>
+          <option value="3">EUR</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="concepto_desde">Concepto desde</label>
+        <input type="text" id="concepto_desde" value="Ingreso">
+      </div>
+
+      <div class="form-group">
+        <label for="cuenta_desde">Cuenta desde</label>
+        <input type="text" id="cuenta_desde" value="Caja">
+      </div>
+
+      <div class="form-group">
+        <label for="moneda_hacia">Moneda hacia</label>
+        <select id="moneda_hacia">
+          <option value="1">ARS</option>
+          <option value="2">USD</option>
+          <option value="3">EUR</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="concepto_hacia">Concepto hacia</label>
+        <input type="text" id="concepto_hacia" value="Egreso">
+      </div>
+
+      <div class="form-group">
+        <label for="cuenta_hacia">Cuenta hacia</label>
+        <input type="text" id="cuenta_hacia" value="Banco">
+      </div>
+
+      <div class="form-group">
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" cols="30" rows="10"></textarea>
+      </div>
+
+      <button type="submit">Guardar</button>
+    </form>
+  </main>
+
+</body>
+</html>
